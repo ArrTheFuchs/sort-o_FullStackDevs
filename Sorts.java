@@ -82,7 +82,7 @@ public static void selection(ArrayList<Comparable> data )
   {
     for(int partition = 0; partition < data.size() - 1; partition++) {
       //partition marks first item in unsorted region
-
+      
       //traverse sorted region from right to left
       for(int i = partition + 1; i > 0; i--) {
 

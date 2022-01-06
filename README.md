@@ -4,6 +4,7 @@ Perry Rijal, **Salaj Fuchs**, Ariel Huang
 
 all the sorting methods
 
+SONG OF THE WEEK: GODS PLAN -- DRAKE (TEMPORARY)
 
 
 ## Bubble Sort
