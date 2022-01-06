@@ -5,8 +5,6 @@ Perry Rijal, **Salaj Fuchs**, Ariel Huang
 all the sorting methods
 
 
-1 2 3 4 5
-
 
 ## Bubble Sort
 
