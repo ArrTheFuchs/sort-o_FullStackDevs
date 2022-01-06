@@ -4,7 +4,7 @@ public class Sorts{
   //HELPER METHODS
 
 // returns an ArrayList of random integers from lo to hi, inclusive
-public static ArrayList populate( int size, int lo, int hi ) {
+public static ArrayList<Integer> populate( int size, int lo, int hi ) {
   ArrayList<Integer> retAL = new ArrayList<Integer>();
   while( size > 0 ) {
     //     offset + rand int on interval [lo,hi]
@@ -65,18 +65,13 @@ public static void selection(ArrayList<Comparable> data )
     int maxPos;
 
     for(int pass = data.size() - 1; pass >= 0; pass--) {
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
       maxPos = 0;
       for(int i = 0; i <= pass; i++) {
-        System.out.println( "maxPos: " + maxPos );//diag
-        System.out.println( data );//diag
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
         }
       }
       swap(data, pass, maxPos);
-
-      System.out.println( "after swap: " +  data );//diag
     }
   }//end selectionSort
 
@@ -88,9 +83,6 @@ public static void selection(ArrayList<Comparable> data )
     for(int partition = 0; partition < data.size() - 1; partition++) {
       //partition marks first item in unsorted region
 
-      System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
-      System.out.println( data );
-
       //traverse sorted region from right to left
       for(int i = partition + 1; i > 0; i--) {
 
@@ -98,7 +90,6 @@ public static void selection(ArrayList<Comparable> data )
         // by swapping adjacent items
         if ( data.get(i).compareTo(data.get(i - 1)) < 0 ) {
 
-          System.out.println( "swap indices "+(i-1)+" & "+i+"..." ); //diag
           swap(data, i, i - 1);
 
         }
