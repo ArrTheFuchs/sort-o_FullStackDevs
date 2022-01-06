@@ -57,7 +57,6 @@ public static void bubble( ArrayList<Comparable> data )
   }
 }
 
-
 public static void selection(ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
@@ -80,7 +79,6 @@ public static void selection(ArrayList<Comparable> data )
       System.out.println( "after swap: " +  data );//diag
     }
   }//end selectionSort
-
 
   // VOID version of InsertionSort
   // Rearranges elements of input ArrayList
@@ -108,7 +106,6 @@ public static void selection(ArrayList<Comparable> data )
           break;
       }
     }
-  }//end insertionSortV
+  }//end insertionSort
 
-
-}
+}//end of class
