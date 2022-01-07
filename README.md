@@ -9,18 +9,18 @@ SONG OF THE WEEK: GODS PLAN -- DRAKE (TEMPORARY)
 
 ## Bubble Sort
 
-**Best Case:** Already sorted
+**Best Case:** Already sorted <br>
 If it's already sorted, then bubble will not have to make any swaps, going over the array just once, and it will be the most efficient.
 
-**Worst Case:** Backwards Sorted
+**Worst Case:** Backwards Sorted <br>
 If it's backwards sorted, bubble will have to swap every single index multiple times, leading to the least efficient way.
 
 ## Selection Sort
 
-**Best Case:** Doesn't matter
+**Best Case:** Doesn't matter <br>
 Selection swaps things with itself anyways, so it doesn't matter, because even if it was sorted there would still be swaps.
 
-**Worst Case:** Backwards Sorted
+**Worst Case:** Backwards Sorted <br>
 hmm according to the logic above there is also no worst case
 
 ## Insertion Sort
@@ -28,5 +28,5 @@ hmm according to the logic above there is also no worst case
 **Best Case:** Already sorted <br>
 Insertion won't have to swap anything if the array is already sorted.
 
-**Worst Case:** Backwards Sorted
+**Worst Case:** Backwards Sorted <br>
 Insertion will have to swap every time the array length is increased.
