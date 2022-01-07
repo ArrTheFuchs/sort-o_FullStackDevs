@@ -25,8 +25,8 @@ hmm according to the logic above there is also no worst case
 
 ## Insertion Sort
 
-**Best Case:** Already sorted
-<br>Insertion won't have to swap anything if the array is already sorted.
+**Best Case:** Already sorted <br>
+Insertion won't have to swap anything if the array is already sorted.
 
 **Worst Case:** Backwards Sorted
 Insertion will have to swap every time the array length is increased.
