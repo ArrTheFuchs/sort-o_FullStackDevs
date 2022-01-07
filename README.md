@@ -4,7 +4,7 @@ Perry Rijal, **Salaj Fuchs**, Ariel Huang
 
 All the sorting methods
 
-SONG OF THE WEEK: ------ -- x0o0x
+SONG OF THE WEEK: ------ -- x0o0x_
 
 
 ## Bubble Sort
