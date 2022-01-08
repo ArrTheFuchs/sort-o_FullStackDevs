@@ -17,36 +17,29 @@ public class Driver{
     Sorts.bubble(tbs);
 
     //Bubble
-    System.out.println("BUBBLE");
+    System.out.println("BUBBLE\n");
     System.out.println("Best Case:");
     Sorts.bubble(tbs);
-    System.out.println(tbs);
   
     System.out.println("Worst Case:");
-    reverse(tbs);
     Sorts.bubble(tbs);
-    System.out.println(tbs);
     
     //Selection
     System.out.println("SELECTION");
     System.out.println("\nBest Case:");
     Sorts.selection(tbs);
-    System.out.println(tbs);
 
     System.out.println("Worst Case:");
     reverse(tbs);
     Sorts.selection(tbs);
-    System.out.println(tbs);
     
     //Insertion
     System.out.println("INSERTION");
     System.out.println("\nBest Case:");
     Sorts.insertion(tbs);
-    System.out.println(tbs);
 
     System.out.println("Worst Case:");
     reverse(tbs); 
     Sorts.insertion(tbs);
-    System.out.println(tbs);
   }
 }

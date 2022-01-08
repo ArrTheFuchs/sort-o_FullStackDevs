@@ -59,7 +59,7 @@ public static void bubble( ArrayList<Comparable> data )
       swaps++;
     }
   }
-  System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
+  System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n" );
 }
 
 public static void selection(ArrayList<Comparable> data )
@@ -81,7 +81,7 @@ public static void selection(ArrayList<Comparable> data )
       swap(data, pass, maxPos);
       swaps++;
     }
-    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
+    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n");
   }//end selectionSort
 
   // VOID version of InsertionSort
@@ -107,7 +107,7 @@ public static void selection(ArrayList<Comparable> data )
         comparisons++;
       }
     }
-    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
+    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n");
   }//end insertionSort
 
 }//end of class
