@@ -1,0 +1,31 @@
+DISCO
+
+QCC
+
+BUB-QA
+* q0: If a pass requires no swaps, what do you know?
+* a0: The array is sorted.
+* q1: After pass p, what do you know?
+* a1: The array is ordered up to index p.
+* q2: How many passes are necessary to completely sort?
+* a2: At most the length of the array.
+SEL-QA
+* q0: How many passes to sort n elements?
+* a0: n - 1 passes.
+* q1: What do you know after pass p?
+* a1: p elements are sorted.
+* q2: How do you know if sorted?
+* a2: When every value before is less than or equal to the value after.
+* q3: What does a pass boil down to?
+* a3: Finding smallest number that is smaller than the current one.
+INS-QA
+* q0: How many passes to sort n elements?
+* a0: n passes.
+* q1: What do you know after pass p?
+* a1: p + 1 elements are sorted.
+* q2: How will you know when sorted?
+* a2: Passes = length of array.
+* q3: What constitues a pass?
+* a3: Sorting the set that you are currently on.
+* q4: What must you track?
+* a4: The new value added to the set each time.
