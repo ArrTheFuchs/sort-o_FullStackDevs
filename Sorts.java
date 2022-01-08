@@ -39,6 +39,8 @@ public static void swap(ArrayList swapee, int i1, int i2){
 // postcondition: data's elements sorted in ascending order
 public static void bubble( ArrayList<Comparable> data )
 {
+  int comparisons = 0;
+  int swaps = 0;
   //for each pass do this
   //we loop size of array - 1 times
   for( int i = 0; i < data.size()-1; i++){
@@ -51,16 +53,20 @@ public static void bubble( ArrayList<Comparable> data )
       if( right.compareTo(left) >= 0 ){
         continue;
       }
+      comparisons++;
       //swap
       swap(data, x, x-1);
+      swaps++;
     }
   }
+  System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
 }
 
 public static void selection(ArrayList<Comparable> data )
   {
+    int comparisons = 0;
+    int swaps = 0;
     //note: this version places greatest value at "rightmost" end
-
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
 
@@ -70,9 +76,12 @@ public static void selection(ArrayList<Comparable> data )
         if (data.get(i).compareTo(data.get(maxPos)) > 0) {
           maxPos = i;
         }
+        comparisons++;
       }
       swap(data, pass, maxPos);
+      swaps++;
     }
+    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
   }//end selectionSort
 
   // VOID version of InsertionSort
@@ -80,23 +89,25 @@ public static void selection(ArrayList<Comparable> data )
   // postcondition: data's elements sorted in ascending order
   public static void insertion( ArrayList<Comparable> data )
   {
+    int comparisons = 0;
+    int swaps = 0;
     for(int partition = 0; partition < data.size() - 1; partition++) {
       //partition marks first item in unsorted region
-      
       //traverse sorted region from right to left
       for(int i = partition + 1; i > 0; i--) {
-
         // "walk" the current item to where it belongs
         // by swapping adjacent items
         if ( data.get(i).compareTo(data.get(i - 1)) < 0 ) {
-
           swap(data, i, i - 1);
-
+          swaps++;
         }
-        else
+        else{
           break;
+        }
+        comparisons++;
       }
     }
+    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps);
   }//end insertionSort
 
 }//end of class

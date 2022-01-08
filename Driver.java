@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class Driver{
-
   public static void reverse( ArrayList arr ){
     
     for( int i = 0; i < arr.size()/2; i++){
@@ -50,5 +49,4 @@ public class Driver{
     Sorts.insertion(tbs);
     System.out.println(tbs);
   }
-
 }
