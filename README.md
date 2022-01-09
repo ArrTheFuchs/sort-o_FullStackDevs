@@ -1,6 +1,6 @@
 # Never Fear, Big O is Here!
 
-TNPG: 
+TNPG: FullStackDevs <br>
 ROSTER: Perry Huang, Salaj Rijal, Ariel Fuchs
 
 All the sorting methods
