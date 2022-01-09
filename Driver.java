@@ -10,36 +10,37 @@ public class Driver{
   }
 
   public static void main (String[] args){
-    //TO DO:
-    //Add a way to check how "fast" it is
-    
+    //ArrayList to be uses for testing
     ArrayList tbs = Sorts.populate(10, 0, 9);
+
+    //To have it sorted initiall (doesnt matter what sort we use)
     Sorts.bubble(tbs);
 
     //Bubble
     System.out.println("BUBBLE\n");
     System.out.println("Best Case:");
-    Sorts.bubble(tbs);
+    System.out.println( Sorts.bubble(tbs) );
   
     System.out.println("Worst Case:");
-    Sorts.bubble(tbs);
+    reverse(tbs);
+    System.out.println( Sorts.bubble(tbs) );
     
     //Selection
     System.out.println("SELECTION");
     System.out.println("\nBest Case:");
-    Sorts.selection(tbs);
+    System.out.println( Sorts.selection(tbs) );
 
     System.out.println("Worst Case:");
     reverse(tbs);
-    Sorts.selection(tbs);
+    System.out.println( Sorts.selection(tbs) ); 
     
     //Insertion
     System.out.println("INSERTION");
     System.out.println("\nBest Case:");
-    Sorts.insertion(tbs);
+    System.out.println( Sorts.insertion(tbs) );
 
     System.out.println("Worst Case:");
-    reverse(tbs); 
-    Sorts.insertion(tbs);
+    reverse(tbs);
+    System.out.println( Sorts.insertion(tbs) );
   }
 }

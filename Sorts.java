@@ -37,7 +37,7 @@ public static void swap(ArrayList swapee, int i1, int i2){
 // VOID version of bubbleSort
 // Rearranges elements of input ArrayList
 // postcondition: data's elements sorted in ascending order
-public static void bubble( ArrayList<Comparable> data )
+public static String bubble( ArrayList<Comparable> data )
 {
   int comparisons = 0;
   int swaps = 0;
@@ -51,6 +51,7 @@ public static void bubble( ArrayList<Comparable> data )
       Comparable right = data.get(x);
       //check right is greater than or = to left
       if( right.compareTo(left) >= 0 ){
+        comparisons++;
         continue;
       }
       comparisons++;
@@ -59,10 +60,10 @@ public static void bubble( ArrayList<Comparable> data )
       swaps++;
     }
   }
-  System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n" );
+  return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
 }
 
-public static void selection(ArrayList<Comparable> data )
+public static String selection(ArrayList<Comparable> data )
   {
     int comparisons = 0;
     int swaps = 0;
@@ -81,13 +82,13 @@ public static void selection(ArrayList<Comparable> data )
       swap(data, pass, maxPos);
       swaps++;
     }
-    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n");
+    return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
   }//end selectionSort
 
   // VOID version of InsertionSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void insertion( ArrayList<Comparable> data )
+  public static String insertion( ArrayList<Comparable> data )
   {
     int comparisons = 0;
     int swaps = 0;
@@ -102,12 +103,13 @@ public static void selection(ArrayList<Comparable> data )
           swaps++;
         }
         else{
+          comparisons++;
           break;
         }
         comparisons++;
       }
     }
-    System.out.println("Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n");
+    return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
   }//end insertionSort
 
 }//end of class

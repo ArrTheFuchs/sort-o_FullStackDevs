@@ -1,6 +1,7 @@
-# sort-o_FullStackDevs
+# Never Fear, Big O is Here!
 
-Perry Rijal, **Salaj Fuchs**, Ariel Huang
+TNPG: 
+ROSTER: Perry Huang, Salaj Rijal, Ariel Fuchs
 
 All the sorting methods
 
@@ -9,11 +10,12 @@ SONG OF THE WEEK: ------ -- x0o0x_
 
 ## Bubble Sort
 
-**Best Case:** Already sorted <br>
+**Best Case:** Already Sorted <br>
 If it's already sorted, then bubble will not have to make any swaps, going over the array just once, and it will be the most efficient.
 
 **Worst Case:** Backwards Sorted <br>
 If it's backwards sorted, bubble will have to swap every single index multiple times, leading to the least efficient way.
+
 
 ## Selection Sort
 
@@ -22,6 +24,7 @@ Selection swaps things with itself anyways, so it doesn't matter, because even i
 
 **Worst Case:** Backwards Sorted <br>
 hmm according to the logic above there is also no worst case
+
 
 ## Insertion Sort
 
