@@ -34,7 +34,6 @@ public static void swap(ArrayList swapee, int i1, int i2){
   swapee.set(i2, temp);
 }
 
-// VOID version of bubbleSort
 // Rearranges elements of input ArrayList
 // postcondition: data's elements sorted in ascending order
 public static String bubble( ArrayList<Comparable> data )
@@ -85,7 +84,6 @@ public static String selection(ArrayList<Comparable> data )
     return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
   }//end selectionSort
 
-  // VOID version of InsertionSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
   public static String insertion( ArrayList<Comparable> data )
