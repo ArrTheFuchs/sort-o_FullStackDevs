@@ -9,11 +9,8 @@ public class Driver{
     
   }
 
-  public static void main (String[] args){
-    //ArrayList to be uses for testing
-    ArrayList tbs = Sorts.populate(100, 0, 9);
-
-    //To have it sorted initially (doesnt matter what sort we use)
+  public static void testThree( int size ){
+    ArrayList tbs = Sorts.populate(size, 0, 100);
     Sorts.bubble(tbs);
 
     //Bubble
@@ -42,5 +39,16 @@ public class Driver{
     System.out.println("Worst Case");
     reverse(tbs);
     System.out.println( Sorts.insertion(tbs) );
+
+  }
+
+  public static void main (String[] args){
+
+    for( int i = 10; i <= 40; i *= 2 ){
+
+      System.out.println("Test for ArrayList of size " + i + "\n");
+      testThree(i);
+
+    }
   }
 }

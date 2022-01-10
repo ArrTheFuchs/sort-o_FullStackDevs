@@ -40,6 +40,7 @@ public static String bubble( ArrayList<Comparable> data )
 {
   int comparisons = 0;
   int swaps = 0;
+  int passes = 0;
   //for each pass do this
   //we loop size of array - 1 times
   for( int i = 0; i < data.size()-1; i++){
@@ -58,14 +59,16 @@ public static String bubble( ArrayList<Comparable> data )
       swap(data, x, x-1);
       swaps++;
     }
+    passes++;
   }
-  return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
+  return "Passes: " + passes + "\nComparisons: " + comparisons + "\nSwaps: " + swaps + "\n";
 }
 
 public static String selection(ArrayList<Comparable> data )
   {
     int comparisons = 0;
     int swaps = 0;
+    int passes = 0;
     //note: this version places greatest value at "rightmost" end
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
@@ -80,8 +83,9 @@ public static String selection(ArrayList<Comparable> data )
       }
       swap(data, pass, maxPos);
       swaps++;
+      passes++;
     }
-    return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
+    return "Passes: " + passes + "\nComparisons: " + comparisons + "\nSwaps: " + swaps + "\n";
   }//end selectionSort
 
   // Rearranges elements of input ArrayList
@@ -90,6 +94,7 @@ public static String selection(ArrayList<Comparable> data )
   {
     int comparisons = 0;
     int swaps = 0;
+    int passes = 0;
     for(int partition = 0; partition < data.size() - 1; partition++) {
       //partition marks first item in unsorted region
       //traverse sorted region from right to left
@@ -106,8 +111,9 @@ public static String selection(ArrayList<Comparable> data )
         }
         comparisons++;
       }
+      passes++;
     }
-    return "Comparisons: " + comparisons + "\n" + "Swaps: " + swaps + "\n";
+    return "Passes: " + passes + "\nComparisons: " + comparisons + "\nSwaps: " + swaps + "\n";
   }//end insertionSort
 
 }//end of class

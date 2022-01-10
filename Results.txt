@@ -1,0 +1,114 @@
+Test for ArrayList of size 10
+
+BUBBLE
+
+Best Case
+Passes: 9
+Comparisons: 45
+Swaps: 0
+
+Worst Case
+Passes: 9
+Comparisons: 45
+Swaps: 45
+
+SELECTION
+
+Best Case
+Passes: 10
+Comparisons: 55
+Swaps: 10
+
+Worst Case
+Passes: 10
+Comparisons: 55
+Swaps: 10
+
+INSERTION
+
+Best Case
+Passes: 9
+Comparisons: 9
+Swaps: 0
+
+Worst Case
+Passes: 9
+Comparisons: 45
+Swaps: 45
+
+Test for ArrayList of size 20
+
+BUBBLE
+
+Best Case
+Passes: 19
+Comparisons: 190
+Swaps: 0
+
+Worst Case
+Passes: 19
+Comparisons: 190
+Swaps: 189
+
+SELECTION
+
+Best Case
+Passes: 20
+Comparisons: 210
+Swaps: 20
+
+Worst Case
+Passes: 20
+Comparisons: 210
+Swaps: 20
+
+INSERTION
+
+Best Case
+Passes: 19
+Comparisons: 19
+Swaps: 0
+
+Worst Case
+Passes: 19
+Comparisons: 190
+Swaps: 189
+
+Test for ArrayList of size 40
+
+BUBBLE
+
+Best Case
+Passes: 39
+Comparisons: 780
+Swaps: 0
+
+Worst Case
+Passes: 39
+Comparisons: 780
+Swaps: 775
+
+SELECTION
+
+Best Case
+Passes: 40
+Comparisons: 820
+Swaps: 40
+
+Worst Case
+Passes: 40
+Comparisons: 820
+Swaps: 40
+
+INSERTION
+
+Best Case
+Passes: 39
+Comparisons: 39
+Swaps: 0
+
+Worst Case
+Passes: 39
+Comparisons: 779
+Swaps: 775
+
