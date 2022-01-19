@@ -3,6 +3,7 @@ DISCO
 
 QCC
 -what is the best sort type
+-what exactly is C and k? What is its significance in cs?
 
 
 BUB-QA
